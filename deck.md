@@ -1,3 +1,3 @@
 mathjax test
-\(\int\)
-\[\int\]
+\\(\int\\)
+\\[\int\\]
