@@ -1,21 +1,19 @@
 {
     "__type__": "Deck",
     "children": [],
-    "crowdanki_uuid": "7a2b962d-13a1-11ed-ba7c-b42e99a1a270",
-    "deck_config_uuid": "7a2bbd3c-13a1-11ed-9981-b42e99a1a270",
+    "crowdanki_uuid": "21834070-16b9-11ed-b06b-00163e5e6c00",
+    "deck_config_uuid": "21835eca-16b9-11ed-b06b-00163e5e6c00",
     "deck_configurations": [
         {
             "__type__": "DeckConfig",
             "autoplay": true,
-            "buryInterdayLearning": false,
-            "crowdanki_uuid": "7a2bbd3c-13a1-11ed-9981-b42e99a1a270",
+            "crowdanki_uuid": "21835eca-16b9-11ed-b06b-00163e5e6c00",
             "dyn": false,
-            "interdayLearningMix": 0,
             "lapse": {
                 "delays": [
-                    10.0
+                    10
                 ],
-                "leechAction": 1,
+                "leechAction": 0,
                 "leechFails": 8,
                 "minInt": 1,
                 "mult": 0.0
@@ -25,50 +23,48 @@
             "new": {
                 "bury": false,
                 "delays": [
-                    1.0,
-                    10.0
+                    1,
+                    10
                 ],
                 "initialFactor": 2500,
                 "ints": [
                     1,
                     4,
-                    0
+                    7
                 ],
                 "order": 1,
-                "perDay": 20
+                "perDay": 20,
+                "separate": true
             },
-            "newGatherPriority": 0,
-            "newMix": 0,
-            "newPerDayMinimum": 0,
-            "newSortOrder": 0,
             "replayq": true,
             "rev": {
                 "bury": false,
                 "ease4": 1.3,
+                "fuzz": 0.05,
                 "hardFactor": 1.2,
                 "ivlFct": 1.0,
                 "maxIvl": 36500,
+                "minSpace": 1,
                 "perDay": 200
             },
-            "reviewOrder": 0,
             "timer": 0
         }
     ],
     "desc": "",
     "dyn": 0,
-    "extendNew": 0,
-    "extendRev": 0,
+    "extendNew": 10,
+    "extendRev": 50,
     "media_files": [],
-    "name": "Linear-Algebra",
+    "name": "Linear Algebra",
     "note_models": [
         {
             "__type__": "NoteModel",
-            "crowdanki_uuid": "9b5aec34-13a1-11ed-be64-b42e99a1a270",
-            "css": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n",
+            "crowdanki_uuid": "218389a4-16b9-11ed-b06b-00163e5e6c00",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n",
             "flds": [
                 {
-                    "description": "",
                     "font": "Arial",
+                    "media": [],
                     "name": "Front",
                     "ord": 0,
                     "rtl": false,
@@ -76,8 +72,8 @@
                     "sticky": false
                 },
                 {
-                    "description": "",
                     "font": "Arial",
+                    "media": [],
                     "name": "Back",
                     "ord": 1,
                     "rtl": false,
@@ -87,44 +83,221 @@
             ],
             "latexPost": "\\end{document}",
             "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
-            "latexsvg": false,
             "name": "Basic",
             "req": [
                 [
                     0,
-                    "any",
+                    "all",
                     [
                         0
                     ]
                 ]
             ],
             "sortf": 0,
+            "tags": [
+                "abstract-algebra,",
+                "basic-definitions,",
+                "fields",
+                "linear-algebra,"
+            ],
             "tmpls": [
                 {
                     "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
                     "bafmt": "",
-                    "bfont": "",
                     "bqfmt": "",
-                    "bsize": 0,
                     "did": null,
                     "name": "Card 1",
                     "ord": 0,
                     "qfmt": "{{Front}}"
                 }
             ],
-            "type": 0
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "e83eae34-16b9-11ed-b06b-00163e5e6c00",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.cloze {\n font-weight: bold;\n color: blue;\n}\n.nightMode .cloze {\n color: lightblue;\n}",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Extra",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "Cloze",
+            "sortf": 0,
+            "tags": [
+                "abstract-algebra,",
+                "basic-results,",
+                "field,",
+                "linear-algebra"
+            ],
+            "tmpls": [
+                {
+                    "afmt": "{{cloze:Text}}<br>\n{{Extra}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Cloze",
+                    "ord": 0,
+                    "qfmt": "{{cloze:Text}}"
+                }
+            ],
+            "type": 1,
+            "vers": []
         }
     ],
     "notes": [
         {
             "__type__": "Note",
+            "data": "",
             "fields": [
-                "front test",
-                "back test"
+                "What's a ring?",
+                "A ring is a triplet \\((R,+,\\cdot)\\) such that: <br>1) \\((R,+)\\) is an abelian group <br>2) (Associativity) \\[ <br>&nbsp;&nbsp;&nbsp; \\forall a,b,c\\in R:\\qquad (a\\cdot b)\\cdot c=a\\cdot(b\\cdot c) <br>.\\] <br>3) (Distributivity) \\[ <br>&nbsp;&nbsp;&nbsp; \\forall a,b,c\\in R:\\qquad (a+b)\\cdot c=a\\cdot c+b\\cdot c,\\qquad c\\cdot(a+b)=c\\cdot a+c\\cdot b <br>.\\]"
             ],
-            "guid": "eFR(LMl;>5",
-            "note_model_uuid": "9b5aec34-13a1-11ed-be64-b42e99a1a270",
-            "tags": []
+            "flags": 0,
+            "guid": "r`t{7OhB~q",
+            "note_model_uuid": "218389a4-16b9-11ed-b06b-00163e5e6c00",
+            "tags": [
+                "abstract-algebra,",
+                "basic-definitions,",
+                "rings"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "What's a commutative ring?",
+                "A ring \\((R,+,\\cdot)\\) is commutative if \\(a\\cdot b=b\\cdot a\\) for all \\(a,b \\in R\\)."
+            ],
+            "flags": 0,
+            "guid": "NmQXcqfP&o",
+            "note_model_uuid": "218389a4-16b9-11ed-b06b-00163e5e6c00",
+            "tags": [
+                "abstract-algebra,",
+                "basic-definitions,",
+                "rings"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "What's a ring with identity?",
+                "A ring \\((R,+,\\cdot)\\) with identity is a ring that contains an element \\(e\\) such that, \\[ <br>\\forall a\\in R:\\qquad a\\cdot e=e\\cdot a=a <br>.\\]&nbsp;<br>"
+            ],
+            "flags": 0,
+            "guid": "k5zEgdj_bz",
+            "note_model_uuid": "218389a4-16b9-11ed-b06b-00163e5e6c00",
+            "tags": [
+                "abstract-algebra,",
+                "basic-definitions,",
+                "rings"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Define a field",
+                "A field \\(F\\) is a commutative ring with identity in which each nonzero element has a multiplicative inverse."
+            ],
+            "flags": 0,
+            "guid": "x`6I)^W942",
+            "note_model_uuid": "218389a4-16b9-11ed-b06b-00163e5e6c00",
+            "tags": [
+                "abstract-algebra,",
+                "basic-definitions,",
+                "fields",
+                "linera-algebra,",
+                "rings,"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Give an example of a field",
+                "\\[(\\mathbb{C},+,\\cdot)\\]"
+            ],
+            "flags": 0,
+            "guid": "EHw41>sJ_b",
+            "note_model_uuid": "218389a4-16b9-11ed-b06b-00163e5e6c00",
+            "tags": [
+                "abstract-algebra,",
+                "basic-definitions,",
+                "examples",
+                "field,",
+                "linear-algebra,"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "How to quickly check that \\(H\\) is a subfield of \\(F\\)?",
+                "It must contain \\(0\\) and \\(1\\), closed under addition and multiplication and contain all their inverses.&nbsp;"
+            ],
+            "flags": 0,
+            "guid": "yy&=tt~s$I",
+            "note_model_uuid": "218389a4-16b9-11ed-b06b-00163e5e6c00",
+            "tags": [
+                "abstract-algebra,",
+                "basic-definitions,",
+                "field,",
+                "linear-algebra"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Each field of characteristic zero contains a copy of the {{c1::rational number field}}.&nbsp;<br>",
+                "Prove it!&nbsp;"
+            ],
+            "flags": 0,
+            "guid": "ns441~f$iN",
+            "note_model_uuid": "e83eae34-16b9-11ed-b06b-00163e5e6c00",
+            "tags": [
+                "abstract-algebra,",
+                "basic-results,",
+                "field,",
+                "linear-algebra"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "What's the characteristic of a ring with identity?",
+                "\\[ <br>\\operatorname{min}\\left\\{c\\in\\mathbb{N} \\mid c\\cdot 1=0\\right\\} <br>.\\] If no such number \\(c\\) exists then \\(\\operatorname{char}(R)=0\\).&nbsp;<br>"
+            ],
+            "flags": 0,
+            "guid": "P-<}/K/E=C",
+            "note_model_uuid": "218389a4-16b9-11ed-b06b-00163e5e6c00",
+            "tags": [
+                "abstract-algebra,",
+                "basic-definitions,",
+                "fields,",
+                "linear-algebra"
+            ]
         }
     ]
 }
